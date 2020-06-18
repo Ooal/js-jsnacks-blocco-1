@@ -8,9 +8,10 @@ var printBtn = document.getElementById('lanciaMoneta');
 
 printBtn.addEventListener ("click" , function () {
 var moneta = document.getElementById('moneta');
-var num = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+var num = Math.floor(Math.random() * 10);
 moneta.classList.remove("testa" , "croce");
 
+console.log(num);
 if (!(num % 2)) {
   moneta.classList.add("testa");
 } else {
